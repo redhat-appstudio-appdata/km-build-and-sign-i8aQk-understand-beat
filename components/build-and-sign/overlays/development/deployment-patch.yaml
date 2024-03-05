@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: build-and-sign
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ebelarte-tenant/km-build-and-sign/build-and-sign@sha256:62c2ac5657e670d7a55e5e4fe790750629ca7595489c009ee41507cb4d5ba408
+        name: container-image
+        resources: {}
+status: {}
