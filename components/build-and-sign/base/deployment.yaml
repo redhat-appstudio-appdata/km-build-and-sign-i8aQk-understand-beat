@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: build-and-sign
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/ebelarte-tenant/km-build-and-sign/build-and-sign@sha256:62c2ac5657e670d7a55e5e4fe790750629ca7595489c009ee41507cb4d5ba408
+      - image: quay.io/redhat-user-workloads/ebelarte-tenant/km-build-and-sign/build-and-sign@sha256:d3d946d2177f8c9c7b56c8187dcf6d348d2cad407a4eb0423a4e7c55da165e99
         imagePullPolicy: Always
         name: container-image
         ports:
